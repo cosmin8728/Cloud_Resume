@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+
+    <body onload="updateCounter()">
+
+        <script>
+              function updateCounter(){
+                  fetch('https://a8x5yp4nvc.execute-api.us-east-1.amazonaws.com/1992',{
+                      method: 'GET'
+                  })
+                .then(response => {
+                  if (
+                      response.ok 
+                  ) {
+                    return response.json()
+                  } else {
+                    throw new Error('Sorry, something went wrong');
+                  }
+                })
+                .then(data => document.getElementById("hits").innerText = data.body)
+              }
+        </script>
+        
+    
+        <div class="count">Number of visits: <span id="hits"></span></div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Cosmin Cocea | AWS Cloud Practictioner</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawsom-all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <div class="container-fluid overcover">
+        <div class="profile-box">
+            <div class="title row">
+                <h1>Cosmin Cocea</h1>
+                <p>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                    <i class="fas sel fa-star"></i>
+                </p>
+                <h6>AWS Cloud Practictioner</h6>
+            </div>
+            <div class="details row">
+                <div class="col-md-6">
+                    <div class="about pr">
+                        <h5>About</h5>
+                        <p>I am a University graduate of the University of Salford.My main strengths are adaptability, reliability and the determination to get the job done. I am a very sociable person who likes to help out and that can easily adapt to change as proven by my previous work history and moving to Britain for University. Going forward, my goal is to use my passion for computers and information technology to start my career in this environment. </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                   <div class="contact pl">
+                        <h5>Contact Details</h5>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> +44 07871916770</li>
+                            <li><i class="far fa-envelope"></i> C.Cocea@edu.salford.ac.uk</li>
+                            <li><i class="fas fa-globe-americas"></i> resumecc.net</li>
+                            <li><i class="fab fa-linkedin"></i>linkedin.com/in/cosmin-c/</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="details row">
+                <div class="col-md-6">
+                    <div class="experiance pr">
+                        <h5>Experience</h5>
+                        <h6>Cloud Engineer</h6>
+                        <p>Skills City AWS re/Start Scheme (October 2022 - February 2023)</p>
+                        <ul>
+                            <li> Successfully completed an intensive, employer-led AWS re/Start program, which provided hands-on training and certification in cloud computing fundamentals, including AWS services, security, and architecture;</li>
+                            <li> Demonstrated proficiency in AWS tools and technologies, as well as foundational IT concepts such as networking, databases, and operating systems, through practical lab exercises and project-based learning; </li>
+                            <li> Worked through various scenario based labs that introduce intermediate to advanced cloud techniques such as automation with Cloudformation to creating serverless architecture with Lambda;</li>
+                            <li> Developed essential professional skills, including teamwork, communication, and problem-solving, by working collaboratively with a diverse group of peers and mentors, and engaging in career readiness workshops and mock interviews.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="experiance pl">
+                       
+                      
+                        <h6 class="rt6">Customer Experience Manager</h6>
+                        <p>William Hill (March 2018 - October 2022)</p>
+                        <ul>
+                            <li>Motivating the shop team to deliver an exceptional customer experience within a fully compliant environment;</li>
+                            <li>Protecting and growing business performance through active product promotion;</li>
+                            <li>Ensuring betting control guidelines are followed by all the team members;</li>
+                            <li>Resolving or reporting all issues affecting the customer experience;</li>
+                            <li>Resolving bet queries quickly and efficiently in line with levels of authority, ensuring the Gambling Commission Licensing Objectives are fulfilled at all times by all the team;</li>
+                            <li>Ensuring full team adherence to all Health & Safety policies and procedures; communicating positively with all colleagues, offering advice and assistance when needed;</li>
+                            <li>Supporting the development of fellow colleagues and new team members within the shop.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="details row">
+                <div class="col-md-6">
+                    <div class="qualification pr">
+                        <h5>Qualifications</h5>
+                        <div class="quali">
+                            <div class="dat">2015</div>
+                            <div class="qdet">BSc (Hons) Criminology & Sociology (2:1) -  
+                            University of Salford</div>
+                        </div>
+                        <div class="quali">
+                            <div class="dat">2021</div>
+                            <div class="qdet">Level 3 Advanced Technical Diploma in Electrical Installation – Distinction - 
+                            The Manchester College
+                            </div>
+                        </div>
+                        <div class="quali">
+                            <div class="dat">2023</div>
+                            <div class="qdet">Amazon Web Services re/Start Skills Bootcamp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skill pl">
+                        <h5>Skills</h5>
+                        <ul>
+                            <li>Network Design:</li>
+                            <li>Linux;</li>
+                            <li>Python;</li>
+                            <li>Virtual Machines;</li>
+                            <li>AWS;</li>
+                            <li>Cloud Applications;</li>
+                            <li>Cloud Computing;</li>
+                            <li>HTML;</li>
+                            <li>Terraform.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="details mb-0 row">
+                <div class="col-md-6">
+                    <div class="award pr">
+                        <a href="https://www.credly.com/badges/ad1ec165-d76c-4c33-9c47-4576074386f9" class="link" target="_blank">
+                            <img id="cert-thumbnail" src="assets/images/aws-certified-cloud-practitioner.png" alt="AWS Certified Cloud Practictioner">
+                        </a>
+                        <a href="https://www.credly.com/badges/eb280021-2d73-4376-8683-c47c43fd2a98" class="link" target="_blank">
+                            <img id="cert-thumbnail" src="assets/images/aws-re-start-graduate.png" alt="AWS Restart graduate">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="award educa pl">
+                        <h5>Education</h5>
+                        <h6>University of Salford 2015</h6>
+                        <p>Bachelor of Science</p>
+                        <h6>The Manchester College 2021</h6>
+                        <p>Electrical installations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+
+</html>
